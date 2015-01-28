@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <StackPane>
+         <children>
+            <SplitPane dividerPositions="0.29245283018867924" layoutY="7.0" prefHeight="495.0" prefWidth="744.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane fx:id="controlPane" prefHeight="493.0" prefWidth="229.0">
+                     <children>
+                        <StackPane layoutX="14.0" layoutY="14.0">
+                           <children>
+                              <HBox layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="172.0" spacing="20.0" AnchorPane.bottomAnchor="454.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="14.0">
+                                 <children>
+                                    <Button fx:id="start" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start/Stop" />
+                                    <Button fx:id="init" layoutX="76.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="init" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </StackPane>
+                        <Label fx:id="RoboTC" layoutX="8.0" layoutY="65.0" prefHeight="35.0" prefWidth="206.0" text="Robot Cordinates" />
+                        <Label fx:id="Cordinates" layoutX="8.0" layoutY="170.0" prefHeight="35.0" prefWidth="206.0" text="Cordinates" />
+                        <Label fx:id="RobotR" layoutX="8.0" layoutY="135.0" prefHeight="35.0" prefWidth="206.0" text="Robot Rotation" />
+                        <Label fx:id="RobotS" layoutX="8.0" layoutY="100.0" prefHeight="35.0" prefWidth="206.0" text="Robot Speed" />
+                        <Label fx:id="SensorDL" layoutX="8.0" layoutY="205.0" prefHeight="35.0" prefWidth="206.0" text="Sensor distance L" />
+                        <Label fx:id="SensorDR" layoutX="8.0" layoutY="240.0" prefHeight="35.0" prefWidth="206.0" text="Sensor distance R" />
+                        <Button fx:id="SetTarget" layoutX="38.0" layoutY="310.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Set target" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="398.0" prefWidth="228.0">
+                     <children>
+                        <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Pane fx:id="drawPane" layoutX="-1.0" prefHeight="493.0" prefWidth="521.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
